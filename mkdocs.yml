@@ -1,0 +1,24 @@
+site_name: Alan Jojo
+site_url: https://AlanJojo.gitlhub.io
+site_dir: public
+site_author: Alan Jojo
+site_description: Personal website
+
+# Configuration
+theme:
+  name: material
+  custom_dir: overrides
+  favicon: assets/favicon.ico
+  logo: assets/logo.png
+  palette:
+    - scheme: slate
+      primary: black
+
+# Plugins
+plugins:
+  - minify:
+      minify_html: true
+
+# Page tree
+nav:
+  - Alan Jojo: index.md
