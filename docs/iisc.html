@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="author" content="Alan Jojo">
+    <meta name="description" content="Notes for Catechism, Theology posts">
+    <meta name="generator" content="VS Code">
+    <meta name="keywords" content="HTML, CSS, Alan Jojo, GitHub, Bible, Catechism, Ascension Presents, Mike Schmitz">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+    <meta itemprop="name" content="Alan Jojo">
+    <meta itemprop="description" content="Catechism Blog">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <title>IISc Prayer meeting</title>
+  </head>
+  <body>
+    <main class="post">
+      <p id="post-date-replace"></p>
+      <h2>IISc Prayer meeting</h1>
+      <input id="gospel" onkeyup="gospel()" onpaste="gospel()" placeholder="Enter Gospel"><br><br>
+      <button onclick="dropdown()" class="dropbtn">Change Venue</button>
+      <div id="iisc-venue" class="dropdown-content"></div>
+      <br><br>
+      <!-- table for showing data -->
+      <span id="reading_head"></span>
+      <span id="reading_text" style="white-space: pre-line"></span>
+      <br><br>
+      <!-- The button used to copy the text -->
+      <button onclick="copy_text()">Copy text</button>
+    </main>
+    <script src="iisc.js"></script>
+  </body>
+</html>
