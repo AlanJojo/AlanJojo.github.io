@@ -1,0 +1,92 @@
+site_name: Alan Jojo
+site_url: https://alanjojo.github.io/
+site_author: Alan Jojo
+site_description: Reflections, Thoughts and Notes on Apologetics, Catechism, Theology, Scripture etc.
+copyright: © Alan Jojo
+
+theme:
+  name: material
+  custom_dir: overrides
+  variant: modern
+  language: en
+  favicon: assets/favicon.png
+  logo: assets/logo.png
+  font:
+    text: Source Serif 4
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: lucide/moon
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: lucide/sun
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.footer
+    - navigation.top
+    - navigation.instant
+    - search.highlight
+    - content.tooltips
+
+plugins:
+  - search
+  - awesome-nav:
+      logs:
+        no_matches: info
+  - blog:
+      blog_dir: notes
+      post_date_format: long
+      post_url_format: "{date}/{slug}"
+      post_excerpt: optional
+      archive: false
+      categories: true
+  - minify:
+      minify_html: true
+      css_files:
+        - css/extra.css
+      minify_css: true
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.smartsymbols
+  - pymdownx.emoji:
+      emoji_index: !!python/name:zensical.extensions.emoji.twemoji
+      emoji_generator: !!python/name:zensical.extensions.emoji.to_svg
+
+extra:
+  generator: false
+  social:
+    - icon: lucide/mail
+      link: mailto:Godlovesalanjojo@gmail.com
+      name: Email
+    - icon: fontawesome/brands/github
+      link: https://github.com/AlanJojo
+      name: GitHub
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.com/AlanJojo
+      name: GitLab
+    - icon: fontawesome/brands/twitter
+      link: https://x.com/AlanJojoJose
+      name: Twitter
+
+extra_css:
+  - css/extra.css
